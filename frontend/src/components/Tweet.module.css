@@ -1,0 +1,8 @@
+.username{
+    color: blue;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

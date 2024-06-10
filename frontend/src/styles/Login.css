@@ -1,0 +1,107 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("../../public/x.jpg") center;
+    background-size: cover;
+}
+
+.login_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 30%;
+    height: 60%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+@media (max-width: 1000px) {
+    .login_content {
+        width: 60%;
+    }
+}
+
+@media (max-width: 580px) {
+    .login_content {
+        width: 80%;
+    }
+}
+
+.login_content_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.login_content_form input {
+    width: 80%;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    text-align: center;
+    color: white;
+}
+
+/* .login_content_form input input:not(:placeholder-shown):focus {
+     background: transparent;
+ } */
+
+.login_content_form input::placeholder {
+    color: white;
+}
+
+.login_content_form button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: rgb(22, 107, 255);
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.login_content_form button:hover {
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, );
+}
+
+.login_content_google {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.login_content a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.login_content a:hover {
+    text-decoration: underline;
+}
+
+.login_content p {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
