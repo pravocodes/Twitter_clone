@@ -27,6 +27,9 @@ const Navbar = () => {
           <button className="btn" onClick={() => navigate("/home")}>
             Home
           </button>
+          <button className="btn" onClick={() => navigate("/tweets")}>
+            Tweet
+          </button>
           <button
             className="btn"
             onClick={() =>
